@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Marie Health Connect Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", mont;
+    }
+
+    body {
+      background-color: #f4f9f9;
+      color: #4508bd;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8130f3;
+      color: #f5f4f7;
+      padding: 20px;
+      text-align: left;
+    }
+
+    nav {
+      background-color: #97f9e8;
+      display: flex;
+      justify-content: left;
+    }
+
+    nav a {
+      color: rgb(48, 3, 137);
+      text-decoration: none;
+      padding: 15px 25px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #5bfbe8;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: url
+      color: white;
+      padding:120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .section-title {
+      font-size: 2em;
+      color: #2905ab;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .health-tips {
+      background-color: #e4e0f2;
+      border-radius: 10px;
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .health-tips ul {
+      text-align: left;
+      list-style: disc;
+      margin-left: 30px;
+    }
+
+    .contact {
+      background-color: #f1f8e9;
+      padding: 40px 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    form input,
+    form textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 10px;
+      border: 1px solid #381afb;
+      border-radius: 6px;
+    }
+
+    .btn {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #7ff0de;
+    }
+
+    footer {
+      background-color: #7fdcf6;
+      color: rgb(79, 12, 236);
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+
+     video {
+<video width ="1920" height="1080" controls>
+<source src="video.mp4" type="video/mp4">
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Marie Health Connect Hub</h1>
+    <p>Empowering Communities Through Health Awareness And Services</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#tips">Health Tips</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Marie Health Connect Hub</h1>
+    <p>Your trusted platform for reliable health information and clinic guidance.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2 class="section-title">Health Awareness Gallery</h2>
+    <div class="gallery">
+      <img src="https://i.pinimg.com/736x/25/12/19/251219002ccfaa296ea8e045dc2fb6e1.jpg">
+      <img src="https://i.pinimg.com/736x/3d/13/07/3d13072c8433d942c3e6d05c966ca3f9.jpg">
+      <img src="https://i.pinimg.com/736x/7e/ed/ac/7eedac38297ffa1d667688dd270f0a69.jpg">
+      <img src="https://i.pinimg.com/736x/31/c0/ea/31c0eac9e9e9df7f06a954412a09d2d6.jpg">
+    </div>
+  </section>
+
+  <!-- Health Tips Section -->
+  <section id="tips">
+    <h2 class="section-title">Health Tips to be Followed</h2>
+    <div class="health-tips">
+      <ul>
+        <li>Drink at least 8 glasses of water daily to stay hydrated.</li>
+        <li>Wash your hands regularly with soap to prevent infections.</li>
+        <li>Exercise at least 30 minutes every day to boost your immunity.</li>
+        <li>Eat more fruits and vegetables for a balanced diet.</li>
+        <li>Get regular checkups to detect diseases early.</li>
+        <li>Sleep 7–8 hours daily to allow your body to recover.</li>
+         <li>Maintain mental wellness by practicing relaxation techniques or mindfulness.</li>
+      <li>Avoid smoking, excessive alcohol, and other harmful substances.</li>
+      <li>Keep your environment clean and hygienic to prevent diseases.</li>
+      <li>Follow vaccination schedules and recommended preventive measures.</li>
+      </ul>
+    </div>
+
+    <div class="google">
+      <h3>Watch Our Health Awareness Page</h3>
+    <p>For more information, visit <a href="https://www.google.com" target="_blank" style="color:#00796b; text-decoration:underline;">Google</a></p>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    
+    <p>Have a question, want to join a campaign, or partner with us? Reach out below:</p>
+    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! We’ll get back to you soon.');">
+      <input type="text" placeholder="Your full Name" required>
+      <input type="text" placeholder=" Password" required>
+      <input type="email" placeholder="Your Email Address" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+    <h2 class="section-title">Contact Us</h2>
+
+        <p><b>Address</b>: PLOT 123 <br>Bunamwaya next to Total energies</p>
+
+        <p><b>Phone</b>: +256 00099977</p>
+
+        <p><b>Email</b>:mariehealthhub@gmail.com</p>
+
+        <p>You can also reach out to us on our social media hundles at marie health hub</p>
+        <p>Always open from Monday to Sunday between 8am to 5pm</p>
+
+    <div class="map">
+      <h3>Find Us Here:</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.25283885314!2d32.5825193!3d0.3475965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbcfd0b7de2b1%3A0xf7b68e54a329239b!2sKampala%20Hospital!5e0!3m2!1sen!2sug!4v1696789020432!5m2!1sen!2sug"
+        width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Marie Health Connect Hub | Promoting Health Awareness for All</p>
+  </footer>
+</body>
+</html>
